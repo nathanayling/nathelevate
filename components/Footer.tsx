@@ -58,11 +58,12 @@ export function Footer() {
           <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-4">
             <div>
               <Link href="/" className="group flex items-center gap-2">
-                <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-xl">
+                <div className="relative h-14 w-16 shrink-0">
                   <Image
                     src="/logo.png"
                     alt="Nathelevate"
                     fill
+                    sizes="64px"
                     className="object-contain"
                   />
                 </div>
@@ -194,7 +195,7 @@ export function Footer() {
               <div className="mt-5">
                 <Link
                   href="/#products"
-                  className="nathe-yellow-button inline-flex items-center gap-2 rounded-xl bg-[#FCC822] px-4 py-2.5 text-sm font-black transition hover:bg-yellow-300"
+                  className="nathe-yellow-button inline-flex items-center gap-2 rounded-xl bg-[#FCC822] px-4 py-2.5 text-sm font-black text-[#05070D] transition hover:bg-yellow-300"
                 >
                   Explore products
                   <ArrowUpRight className="h-4 w-4" />
@@ -203,51 +204,49 @@ export function Footer() {
             </div>
           </div>
 
-<div className="mt-10 border-t border-white/10 pt-5">
-  <div className="flex flex-col gap-3 text-xs text-white/40 lg:flex-row lg:items-center lg:justify-between">
-    <div className="flex flex-wrap items-center gap-2">
-      <span>
-        © {new Date().getFullYear()} Nathelevate.
-      </span>
+          <div className="mt-10 border-t border-white/10 pt-5">
+            <div className="flex flex-col gap-3 text-xs text-white/40 lg:flex-row lg:items-center lg:justify-between">
+              <div className="flex flex-wrap items-center gap-2">
+                <span>© {new Date().getFullYear()} Nathelevate.</span>
 
-      <span className="text-white/25">•</span>
+                <span className="text-white/25">•</span>
 
-      <span>Build faster. Ship smarter.</span>
+                <span>Build faster. Ship smarter.</span>
 
-      <span className="text-white/25">•</span>
+                <span className="text-white/25">•</span>
 
-      <span>
-        Built by{" "}
-        <a
-          href="https://nathe.tv"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white/60 transition hover:text-white"
-        >
-          Nathe
-        </a>
-      </span>
-    </div>
+                <span>
+                  Built by{" "}
+                  <a
+                    href="https://nathe.tv"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/60 transition hover:text-white"
+                  >
+                    Nathe
+                  </a>
+                </span>
+              </div>
 
-    <div className="flex flex-wrap items-center gap-4">
-      <Link href="/#products" className="hover:text-white transition">
-        Products
-      </Link>
-      <Link href="/#books" className="hover:text-white transition">
-        Guides
-      </Link>
-      <Link href="/#projects" className="hover:text-white transition">
-        Projects
-      </Link>
-      <Link href="/privacy" className="hover:text-white transition">
-        Privacy
-      </Link>
-      <Link href="/terms" className="hover:text-white transition">
-        Terms
-      </Link>
-    </div>
-  </div>
-</div>
+              <div className="flex flex-wrap items-center gap-4">
+                <Link href="/#products" className="transition hover:text-white">
+                  Products
+                </Link>
+                <Link href="/#books" className="transition hover:text-white">
+                  Guides
+                </Link>
+                <Link href="/#projects" className="transition hover:text-white">
+                  Projects
+                </Link>
+                <Link href="/privacy" className="transition hover:text-white">
+                  Privacy
+                </Link>
+                <Link href="/terms" className="transition hover:text-white">
+                  Terms
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </>

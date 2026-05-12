@@ -13,6 +13,7 @@ import {
   Globe2,
   Layers3,
   Package,
+  PlayCircle,
   Rocket,
   ShieldCheck,
   Sparkles,
@@ -189,10 +190,73 @@ const projects = [
 ];
 
 const stats = [
-  { label: "Products", value: "6", icon: Package },
+  { label: "Live projects", value: "6+", icon: FolderKanban },
+  { label: "Digital products", value: "6", icon: Package },
   { label: "Guides", value: "3", icon: BookOpen },
-  { label: "Projects", value: "6", icon: FolderKanban },
-  { label: "AI + Dev", value: "Core", icon: BrainCircuit },
+  { label: "Core focus", value: "AI + Dev", icon: BrainCircuit },
+];
+
+const playlists = [
+  {
+    title: "Racing & Football Data Insights",
+    description:
+      "Daily and weekly breakdowns from RaceEvo, FootyEvo, OddsEvo, real signals, outcomes, and product improvements.",
+    icon: Trophy,
+  },
+  {
+    title: "Ways to Make Money Online with AI",
+    description:
+      "Practical AI income experiments, tools, workflows, and ideas built from a developer’s perspective.",
+    icon: Bot,
+  },
+  {
+    title: "Affiliate Marketing Experiments",
+    description:
+      "Building niche sites, affiliate systems, monetisation experiments, and traffic-generating digital assets.",
+    icon: Zap,
+  },
+  {
+    title: "Amazon KDP Experiments",
+    description:
+      "Using AI and practical systems to create books, guides, and publishing-based income streams.", 
+    icon: BookOpen,
+  },
+  {
+    title: "Digital Products & Online Income",
+    description:
+      "Templates, prompt packs, guides, and systems for building products developers can sell online.", 
+    icon: Package,
+  },
+  {
+    title: "AI Automation & Workflows",
+    description:
+      "How I use AI to plan, build, debug, document, ship, repurpose content, and speed up development.", 
+    icon: BrainCircuit,
+  },
+  {
+    title: "Side Hustle Experiments",
+    description:
+      "Real experiments in SaaS, affiliate sites, AI tools, content, and online income systems.", 
+    icon: FlaskConical,
+  },
+  {
+    title: "Software & Tools I Use",
+    description:
+      "My developer stack, AI tools, productivity systems, recording workflow, and platform choices.", 
+    icon: TerminalSquare,
+  },
+  {
+    title: "SEO & Traffic Strategies",
+    description:
+      "What I’m learning from growing platforms, search traffic, content systems, and niche site experiments.", 
+    icon: Globe2,
+  },
+  {
+    title: "Passive Income Ideas & Systems",
+    description:
+      "Long-term systems for building digital assets, recurring revenue, and scalable online businesses.", 
+    icon: Rocket,
+  },
 ];
 
 export default function NatheElevateLandingPage() {
@@ -201,7 +265,7 @@ export default function NatheElevateLandingPage() {
       {/* HERO */}
       <section
         id="start"
-        className="relative isolate flex min-h-[92vh] items-center overflow-hidden"
+        className="relative isolate flex min-h-[94vh] items-center overflow-hidden"
       >
         <div className="absolute inset-0 -z-10">
           <Image
@@ -211,90 +275,163 @@ export default function NatheElevateLandingPage() {
             priority
             className="hero-img object-cover object-[72%_center] sm:object-right"
           />
-
-          <div className="absolute inset-0 bg-gradient-to-r from-[#05070D] via-[#05070D]/92 to-[#05070D]/35" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#05070D] via-[#05070D]/94 to-[#05070D]/38" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#05070D] via-transparent to-[#05070D]/25" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_32%,rgba(252,200,34,0.08),transparent_28%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_32%,rgba(252,200,34,0.12),transparent_30%)]" />
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#05070D] to-transparent" />
         </div>
 
         <div className="mx-auto w-full max-w-7xl px-6 py-24 sm:px-8 lg:px-10">
-          <div className="max-w-3xl">
-            <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-[#FCC822]/25 bg-black/35 px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-[#FCC822] shadow-[0_0_35px_rgba(252,200,34,0.10)] backdrop-blur">
+          <div className="max-w-4xl">
+            <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-[#FCC822]/25 bg-black/35 px-4 py-2 text-xs font-black uppercase tracking-[0.22em] text-[#FCC822] shadow-[0_0_35px_rgba(252,200,34,0.10)] backdrop-blur">
               <Sparkles className="h-4 w-4" />
-              Digital products for builders
+              AI systems, SaaS builds & online income experiments
             </div>
 
-            <h1 className="max-w-4xl text-5xl font-black leading-[0.92] tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Build faster.
-              <span className="block text-[#FCC822]">Ship smarter.</span>
-              <span className="block text-white/90">Elevate online.</span>
+            <h1 className="max-w-5xl text-5xl font-black leading-[0.92] tracking-tight text-white sm:text-6xl lg:text-7xl">
+              I build real systems
+              <span className="block text-[#FCC822]">with AI, code,</span>
+              <span className="block text-white/90">data & content.</span>
             </h1>
 
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-white/72 sm:text-xl">
-              Practical AI workflows, developer systems, starter kits, guides,
-              and digital resources built from real production experience.
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-white/74 sm:text-xl">
+              Nathelevate is where I document the products, workflows, tools,
+              experiments, and lessons behind building digital assets in public.
+              No hype. Just real builds, real data, and practical systems.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-              <Link
-                href="#products"
-                className="inline-flex items-center justify-center rounded-2xl bg-[#FCC822] px-6 py-4 text-base font-black text-[#05070D] shadow-[0_16px_45px_rgba(252,200,34,0.22)] transition hover:-translate-y-0.5 hover:bg-yellow-300"
+              <a
+                href="https://www.youtube.com/@nathelevate"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center rounded-2xl bg-[#FCC822] px-6 py-4 text-base font-black text-[#05070D] shadow-[0_16px_45px_rgba(252,200,34,0.24)] transition hover:-translate-y-0.5 hover:bg-yellow-300"
               >
-                Explore Products
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+                Watch the builds
+                <Youtube className="ml-2 h-5 w-5" />
+              </a>
 
               <Link
-                href="#projects"
+                href="#products"
                 className="inline-flex items-center justify-center rounded-2xl border border-white/15 bg-white/[0.06] px-6 py-4 text-base font-semibold text-white backdrop-blur transition hover:-translate-y-0.5 hover:border-[#FCC822]/30 hover:bg-white/[0.09]"
               >
-                View Ecosystem
+                Browse resources
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </div>
 
-<div className="mt-12 grid max-w-4xl grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
-  {stats.map((stat) => {
-    const Icon = stat.icon;
+            <div className="mt-12 grid max-w-4xl grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+              {stats.map((stat) => {
+                const Icon = stat.icon;
 
-    return (
-      <div
-        key={stat.label}
-        className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0B1426]/80 px-4 py-5 shadow-[0_14px_40px_rgba(0,0,0,0.35)] backdrop-blur-xl transition hover:-translate-y-1 hover:border-[#FCC822]/35"
-      >
-        <div className="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-[#FCC822]/50 to-transparent" />
-
-        <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-[#FCC822]/20 bg-[#FCC822]/10 text-[#FCC822]">
-          <Icon className="h-5 w-5" />
+                return (
+                  <div
+                    key={stat.label}
+                    className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0B1426]/80 px-4 py-5 shadow-[0_14px_40px_rgba(0,0,0,0.35)] backdrop-blur-xl transition hover:-translate-y-1 hover:border-[#FCC822]/35"
+                  >
+                    <div className="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-[#FCC822]/50 to-transparent" />
+                    <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-[#FCC822]/20 bg-[#FCC822]/10 text-[#FCC822]">
+                      <Icon className="h-5 w-5" />
+                    </div>
+                    <p className="text-2xl font-black leading-none text-white sm:text-3xl">
+                      {stat.value}
+                    </p>
+                    <p className="mt-2 min-h-[32px] text-[10px] font-bold uppercase leading-4 tracking-[0.16em] text-white/45">
+                      {stat.label}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
+      </section>
 
-        <p className="text-2xl font-black leading-none text-white sm:text-3xl">
-          {stat.value}
-        </p>
+      {/* POSITIONING STRIP */}
+      <section className="border-y border-white/10 bg-[#070A12]">
+        <div className="mx-auto grid max-w-7xl gap-4 px-6 py-8 sm:px-8 md:grid-cols-3 lg:px-10">
+          {[
+            {
+              title: "Developer-led",
+              desc: "Built by a full-stack developer shipping real products, not theory.",
+              icon: Code2,
+            },
+            {
+              title: "AI-assisted",
+              desc: "Workflows for using AI to speed up planning, coding, content, and iteration.",
+              icon: BrainCircuit,
+            },
+            {
+              title: "Built in public",
+              desc: "Real progress, real lessons, real experiments, and honest product updates.",
+              icon: PlayCircle,
+            },
+          ].map((item) => {
+            const Icon = item.icon;
 
-        <p className="mt-2 min-h-[32px] text-[10px] font-bold uppercase leading-4 tracking-[0.16em] text-white/45">
-          {stat.label}
-        </p>
-      </div>
-    );
-  })}
-</div>
+            return (
+              <div
+                key={item.title}
+                className="flex gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-5"
+              >
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-[#FCC822]/20 bg-[#FCC822]/10 text-[#FCC822]">
+                  <Icon className="h-5 w-5" />
+                </div>
+                <div>
+                  <h2 className="font-black text-white">{item.title}</h2>
+                  <p className="mt-1 text-sm leading-6 text-white/60">{item.desc}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* PLAYLISTS */}
+      <section id="playlists" className="relative bg-[#05070D]">
+        <div className="mx-auto max-w-7xl px-6 py-24 sm:px-8 lg:px-10">
+          <SectionHeader
+            icon={Youtube}
+            eyebrow="Nathelevate content"
+            title="Follow the builds, experiments, and systems behind the work."
+            description="The channel is structured around real products, AI workflows, dev systems, online income experiments, and practical lessons from building in public."
+          />
+
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {playlists.map((playlist) => {
+              const Icon = playlist.icon;
+
+              return (
+                <div
+                  key={playlist.title}
+                  className="group rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-white/[0.07] to-white/[0.025] p-6 shadow-[0_18px_60px_rgba(0,0,0,0.22)] transition hover:-translate-y-1 hover:border-[#FCC822]/35"
+                >
+                  <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl border border-[#FCC822]/20 bg-[#FCC822]/10 text-[#FCC822] transition group-hover:bg-[#FCC822] group-hover:text-[#05070D]">
+                    <Icon className="h-5 w-5" />
+                  </div>
+                  <h3 className="text-xl font-black tracking-tight text-white">
+                    {playlist.title}
+                  </h3>
+                  <p className="mt-3 text-base leading-7 text-white/66">
+                    {playlist.description}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* PRODUCTS */}
-      <section
-        id="products"
-        className="relative border-y border-white/10 bg-[#070A12]"
-      >
+      <section id="products" className="relative border-y border-white/10 bg-[#070A12]">
         <SectionGlow />
 
         <div className="mx-auto max-w-7xl px-6 py-24 sm:px-8 lg:px-10">
           <SectionHeader
             icon={Package}
             eyebrow="Digital products"
-            title="Practical products built from real AI and development workflows."
-            description="A focused product stack for developers, builders, and creators who want useful assets they can actually apply."
+            title="Practical resources for developers, builders, and creators."
+            description="A focused product stack built around real workflows: AI-assisted development, SaaS structure, launch pages, prompts, and content systems."
           />
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -311,8 +448,8 @@ export default function NatheElevateLandingPage() {
           <SectionHeader
             icon={BookOpen}
             eyebrow="Books & guides"
-            title="Practical guides for developers, builders, and creators."
-            description="Short, focused resources that support the wider Nathelevate ecosystem — available as downloadable guides, with book versions planned later."
+            title="Short, focused guides for turning ideas into usable systems."
+            description="Clear resources for developers who want to use AI better, launch faster, and build realistic online income assets."
           />
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -364,10 +501,7 @@ export default function NatheElevateLandingPage() {
       </section>
 
       {/* LAB */}
-      <section
-        id="lab"
-        className="relative border-y border-white/10 bg-[#070A12]"
-      >
+      <section id="lab" className="relative border-y border-white/10 bg-[#070A12]">
         <SectionGlow />
 
         <div className="mx-auto max-w-7xl px-6 py-24 sm:px-8 lg:px-10">
@@ -379,7 +513,7 @@ export default function NatheElevateLandingPage() {
               <div>
                 <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#FCC822]/25 bg-[#FCC822]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-[#FCC822]">
                   <FlaskConical className="h-4 w-4" />
-                  Private community
+                  Future private community
                 </div>
 
                 <h2 className="text-4xl font-black tracking-tight text-white sm:text-5xl">
@@ -387,10 +521,9 @@ export default function NatheElevateLandingPage() {
                 </h2>
 
                 <p className="mt-5 max-w-3xl text-lg leading-8 text-white/72">
-                  A private community for builders who want access to
-                  behind-the-scenes development notes, AI workflows, sports
-                  data insights, digital product ideas, and practical online
-                  business lessons.
+                  A future private space for builders who want behind-the-scenes
+                  notes, AI workflows, product breakdowns, sports data insights,
+                  digital product ideas, and practical online business lessons.
                 </p>
 
                 <div className="mt-8 grid gap-3 sm:grid-cols-2">
@@ -415,7 +548,7 @@ export default function NatheElevateLandingPage() {
 
               <div className="rounded-3xl border border-white/10 bg-black/30 p-6 backdrop-blur">
                 <p className="text-sm uppercase tracking-[0.24em] text-white/50">
-                  Membership
+                  Planned membership
                 </p>
 
                 <p className="mt-3 text-5xl font-black text-[#FCC822]">
@@ -441,8 +574,8 @@ export default function NatheElevateLandingPage() {
           <SectionHeader
             icon={FolderKanban}
             eyebrow="Project ecosystem"
-            title="Premium products and platforms I’ve built."
-            description="Nathelevate is the central hub. These are the live platforms, SaaS products, data tools, and content systems connected to the wider ecosystem."
+            title="The live platforms behind the content."
+            description="Nathelevate is the personal brand. These are the real platforms, SaaS products, data tools, and content systems being built underneath it."
           />
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -506,26 +639,25 @@ export default function NatheElevateLandingPage() {
         </div>
       </section>
 
-      {/* CONTENT */}
+      {/* CREATOR STORY */}
       <section id="content" className="border-y border-white/10 bg-[#070A12]">
         <div className="mx-auto max-w-7xl px-6 py-24 sm:px-8 lg:px-10">
           <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <div>
               <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#FCC822]/25 bg-[#FCC822]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-[#FCC822]">
                 <Youtube className="h-4 w-4" />
-                Nathelevate
+                Creator-led building
               </div>
 
               <h2 className="text-3xl font-black tracking-tight text-white sm:text-5xl">
-                What Nathelevate is
+                The content comes from the work.
               </h2>
 
               <p className="mt-5 text-lg leading-8 text-white/72">
-                Nathelevate is where I share the real work behind building
-                AI-assisted products, developer tools, sports data platforms,
-                and digital resources. Across Nathe.tv and my social channels,
-                I document what I’m building, what I’m learning, and the
-                practical systems behind each project.
+                Nathelevate is built around documenting real development work:
+                building products, testing AI workflows, launching tools, fixing
+                bugs, learning from data, and turning those lessons into useful
+                content and practical resources.
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -603,29 +735,31 @@ export default function NatheElevateLandingPage() {
           </p>
 
           <h2 className="mx-auto mt-4 max-w-3xl text-3xl font-black tracking-tight text-white sm:text-5xl">
-            Explore practical resources built from real development experience.
+            Follow the builds or grab the resources behind them.
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/72">
-            Browse the products, read the guides, follow the builds, or explore
-            the wider Nathelevate project ecosystem.
+            Watch the videos, browse the digital products, read the guides, or
+            explore the wider Nathelevate project ecosystem.
           </p>
 
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+            <a
+              href="https://www.youtube.com/@nathelevate"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center rounded-2xl bg-[#FCC822] px-6 py-4 text-base font-black text-[#05070D] transition hover:-translate-y-0.5 hover:bg-yellow-300"
+            >
+              Watch YouTube
+              <Youtube className="ml-2 h-5 w-5" />
+            </a>
+
             <Link
               href="#products"
-              className="inline-flex items-center justify-center rounded-2xl bg-[#FCC822] px-6 py-4 text-base font-black text-[#05070D] transition hover:-translate-y-0.5 hover:bg-yellow-300"
+              className="inline-flex items-center justify-center rounded-2xl border border-white/14 bg-white/[0.05] px-6 py-4 text-base font-semibold text-white transition hover:border-white/25 hover:bg-white/[0.08]"
             >
               View Products
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-
-            <Link
-              href="#books"
-              className="inline-flex items-center justify-center rounded-2xl border border-white/14 bg-white/[0.05] px-6 py-4 text-base font-semibold text-white transition hover:border-white/25 hover:bg-white/[0.08]"
-            >
-              View Guides
-              <BookOpen className="ml-2 h-5 w-5" />
             </Link>
           </div>
         </div>

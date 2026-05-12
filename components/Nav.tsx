@@ -139,19 +139,22 @@ export function Nav() {
       >
         <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
           <Link href="/" onClick={requestClose} className="flex items-center gap-2">
-            <div className="relative h-11 w-11 shrink-0 overflow-hidden rounded-xl">
+            <div className="relative h-12 w-14 shrink-0">
               <Image
                 src="/logo.png"
                 alt="Nathelevate logo"
                 fill
                 priority
+                sizes="56px"
                 className="object-contain"
               />
             </div>
 
             <div className="leading-tight">
               <div className="text-sm font-bold text-white">Nathelevate</div>
-              <div className="text-xs text-white/55">Build faster. Ship smarter.</div>
+              <div className="text-xs text-white/55">
+                Build faster. Ship smarter.
+              </div>
             </div>
           </Link>
 
@@ -164,14 +167,15 @@ export function Nav() {
           </button>
         </div>
 
-        <div className="flex h-[calc(100%-76px)] flex-col">
+        <div className="flex h-[calc(100%-84px)] flex-col">
           <div className="flex-1 overflow-y-auto px-3 py-4">
             <div className="mb-3 rounded-2xl border border-[#FCC822]/20 bg-[#FCC822]/10 p-4">
               <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#FCC822]">
                 Nathelevate
               </p>
               <p className="mt-2 text-sm leading-6 text-white/70">
-                AI workflows, products, guides, and real build breakdowns for builders.
+                AI workflows, products, guides, and real build breakdowns for
+                builders.
               </p>
             </div>
 
@@ -196,7 +200,7 @@ export function Nav() {
 
             <button
               onClick={() => handleAnchorClick("#start")}
-              className="nathe-yellow-button mx-1 inline-flex w-[calc(100%-8px)] items-center justify-center rounded-2xl bg-[#FCC822] px-5 py-3 font-black transition hover:bg-yellow-300"
+              className="nathe-yellow-button mx-1 inline-flex w-[calc(100%-8px)] items-center justify-center rounded-2xl bg-[#FCC822] px-5 py-3 font-black text-[#05070D] transition hover:bg-yellow-300"
             >
               <Target className="mr-2 h-4 w-4" />
               Start here
@@ -211,13 +215,14 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-[#05070D]/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 sm:px-8 lg:px-10">
-        <Link href="/" className="group flex items-center gap-2">
-          <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-xl">
+        <Link href="/" className="group flex items-center gap-3">
+          <div className="relative h-12 w-14 shrink-0">
             <Image
               src="/logo.png"
               alt="Nathelevate logo"
               fill
               priority
+              sizes="56px"
               className="object-contain"
             />
           </div>
@@ -226,7 +231,9 @@ export function Nav() {
             <div className="text-sm font-bold tracking-tight text-white transition group-hover:text-[#FCC822]">
               Nathelevate
             </div>
-            <div className="text-xs text-white/55">Build faster. Ship smarter.</div>
+            <div className="text-xs text-white/55">
+              Build faster. Ship smarter.
+            </div>
           </div>
         </Link>
 
@@ -244,7 +251,7 @@ export function Nav() {
 
           <a
             href={toAnchorHref("#start")}
-            className="nathe-yellow-button ml-3 inline-flex items-center rounded-2xl bg-[#FCC822] px-4 py-2 text-sm font-black transition hover:bg-yellow-300"
+            className="nathe-yellow-button ml-3 inline-flex items-center rounded-2xl bg-[#FCC822] px-4 py-2 text-sm font-black text-[#05070D] transition hover:bg-yellow-300"
           >
             Start here
             <ChevronRight className="ml-2 h-4 w-4" />
