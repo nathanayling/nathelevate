@@ -152,7 +152,7 @@ const projects = [
     category: "Football Intelligence",
     href: "https://footyevo.com",
     logo: "/logos/footyevo.png",
-    stack: ["Next.js", "SportsMonks", "TypeScript", "Tailwind"],
+    stack: ["Next.js", "TypeScript", "Tailwind"],
     icon: Trophy,
     description:
       "Football match intelligence platform for fixture analysis, model signals, trends, probabilities, and data-led insights.",
