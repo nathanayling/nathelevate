@@ -500,73 +500,89 @@ export default function NatheElevateLandingPage() {
         </div>
       </section>
 
-      {/* LAB */}
-      <section id="lab" className="relative border-y border-white/10 bg-[#070A12]">
-        <SectionGlow />
+{/* LAB */}
+<section id="lab" className="relative border-y border-white/10 bg-[#070A12]">
+  <SectionGlow />
 
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:px-8 lg:px-10">
-          <div className="relative overflow-hidden rounded-[2.25rem] border border-[#FCC822]/20 bg-gradient-to-br from-[#111827] via-[#0A0F1C] to-[#070A12] p-8 shadow-[0_24px_90px_rgba(0,0,0,0.35)] lg:p-10">
-            <div className="absolute right-[-120px] top-[-120px] h-[320px] w-[320px] rounded-full bg-[#FCC822]/10 blur-3xl" />
-            <div className="absolute bottom-[-140px] left-[-120px] h-[300px] w-[300px] rounded-full bg-[#7C3AED]/12 blur-3xl" />
+  <div className="mx-auto max-w-7xl px-6 py-24 sm:px-8 lg:px-10">
+    <div className="relative overflow-hidden rounded-[2.25rem] border border-[#FCC822]/20 bg-gradient-to-br from-[#111827] via-[#0A0F1C] to-[#070A12] p-8 shadow-[0_24px_90px_rgba(0,0,0,0.35)] lg:p-10">
+      <div className="absolute right-[-120px] top-[-120px] h-[320px] w-[320px] rounded-full bg-[#FCC822]/10 blur-3xl" />
+      <div className="absolute bottom-[-140px] left-[-120px] h-[300px] w-[300px] rounded-full bg-[#7C3AED]/12 blur-3xl" />
 
-            <div className="relative grid gap-10 lg:grid-cols-[1fr_0.72fr] lg:items-center">
-              <div>
-                <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#FCC822]/25 bg-[#FCC822]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-[#FCC822]">
-                  <FlaskConical className="h-4 w-4" />
-                  Future private community
-                </div>
+      <div className="relative grid gap-10 lg:grid-cols-[1fr_0.72fr] lg:items-center">
+        <div>
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#FCC822]/25 bg-[#FCC822]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-[#FCC822]">
+            <FlaskConical className="h-4 w-4" />
+            Coming soon
+          </div>
 
-                <h2 className="text-4xl font-black tracking-tight text-white sm:text-5xl">
-                  Nathelevate Lab
-                </h2>
+          <h2 className="text-4xl font-black tracking-tight text-white sm:text-5xl">
+            Nathelevate Lab
+          </h2>
 
-                <p className="mt-5 max-w-3xl text-lg leading-8 text-white/72">
-                  A future private space for builders who want behind-the-scenes
-                  notes, AI workflows, product breakdowns, sports data insights,
-                  digital product ideas, and practical online business lessons.
-                </p>
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-white/72">
+            Nathelevate Lab is a planned private space for builders who want
+            behind-the-scenes notes, AI workflows, product breakdowns, sports
+            data insights, digital product ideas, and practical online business
+            lessons.
+          </p>
 
-                <div className="mt-8 grid gap-3 sm:grid-cols-2">
-                  {[
-                    "Private Discord access",
-                    "AI workflow tips",
-                    "Football & racing data insights",
-                    "Digital product ideas",
-                    "Build-in-public updates",
-                    "Early access to new resources",
-                  ].map((item) => (
-                    <div
-                      key={item}
-                      className="flex items-center gap-3 rounded-2xl border border-white/10 bg-black/20 px-4 py-3 text-sm font-semibold text-white/75"
-                    >
-                      <CheckCircle2 className="h-4 w-4 text-[#FCC822]" />
-                      {item}
-                    </div>
-                  ))}
-                </div>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-white/55">
+            It is not live yet, but the idea is to create a focused community
+            around real building, useful workflows, honest progress, and early
+            access to new Nathelevate resources.
+          </p>
+
+          <div className="mt-8 grid gap-3 sm:grid-cols-2">
+            {[
+              "Private Discord access",
+              "AI workflow tips",
+              "Football & racing data insights",
+              "Digital product ideas",
+              "Build-in-public updates",
+              "Early access to new resources",
+            ].map((item) => (
+              <div
+                key={item}
+                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-black/20 px-4 py-3 text-sm font-semibold text-white/75"
+              >
+                <CheckCircle2 className="h-4 w-4 text-[#FCC822]" />
+                {item}
               </div>
-
-              <div className="rounded-3xl border border-white/10 bg-black/30 p-6 backdrop-blur">
-                <p className="text-sm uppercase tracking-[0.24em] text-white/50">
-                  Planned membership
-                </p>
-
-                <p className="mt-3 text-5xl font-black text-[#FCC822]">
-                  £9.99
-                </p>
-                <p className="mt-2 text-white/60">per month</p>
-
-                <Link
-                  href="/lab"
-                  className="mt-8 inline-flex w-full items-center justify-center rounded-2xl bg-[#FCC822] px-6 py-4 text-base font-black text-[#05070D] transition hover:bg-yellow-300"
-                >
-                  Join waitlist
-                </Link>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-      </section>
+
+        <div className="rounded-3xl border border-white/10 bg-black/30 p-6 backdrop-blur">
+          <div className="inline-flex rounded-full border border-[#FCC822]/25 bg-[#FCC822]/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-[#FCC822]">
+            Coming soon
+          </div>
+
+          <p className="mt-5 text-sm uppercase tracking-[0.24em] text-white/50">
+            Planned membership
+          </p>
+
+          <p className="mt-3 text-5xl font-black text-[#FCC822]">
+            £9.99
+          </p>
+
+          <p className="mt-2 text-white/60">per month when launched</p>
+
+          <Link
+            href="/lab"
+            className="mt-8 inline-flex w-full items-center justify-center rounded-2xl bg-[#FCC822] px-6 py-4 text-base font-black text-[#05070D] transition hover:bg-yellow-300"
+          >
+            Join waitlist
+          </Link>
+
+          <p className="mt-4 text-center text-xs leading-5 text-white/45">
+            The Lab is planned, not currently active.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* PROJECTS */}
       <section id="projects" className="bg-[#05070D]">
