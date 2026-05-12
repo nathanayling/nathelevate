@@ -127,7 +127,6 @@ export function Nav() {
           closing ? "opacity-0" : "opacity-100",
         ].join(" ")}
       />
-
       <div
         className={[
           "absolute right-0 top-0 h-full w-[92%] max-w-sm",
