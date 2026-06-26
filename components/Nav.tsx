@@ -8,13 +8,11 @@ import { usePathname, useRouter } from "next/navigation";
 import {
   Menu,
   X,
-  Package,
-  BookOpen,
-  FlaskConical,
-  FolderKanban,
+  Bot,
   Youtube,
   ChevronRight,
   Target,
+  Trophy,
 } from "lucide-react";
 
 type NavItem = {
@@ -24,11 +22,9 @@ type NavItem = {
 };
 
 const navItems: NavItem[] = [
-  { href: "#products", label: "Products", icon: Package },
-  { href: "#books", label: "Guides", icon: BookOpen },
-  { href: "#lab", label: "Lab", icon: FlaskConical },
-  { href: "#projects", label: "Projects", icon: FolderKanban },
-  { href: "#content", label: "Content", icon: Youtube },
+  { href: "#pillars", label: "Pillars", icon: Bot },
+  { href: "#projects", label: "Evo Ecosystem", icon: Trophy },
+  { href: "#start", label: "Start Here", icon: Target },
 ];
 
 const ANIM_MS = 260;
@@ -55,7 +51,6 @@ export function Nav() {
 
     document.addEventListener("keydown", onEsc);
     return () => document.removeEventListener("keydown", onEsc);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open, closing]);
 
   useEffect(() => {
@@ -127,6 +122,7 @@ export function Nav() {
           closing ? "opacity-0" : "opacity-100",
         ].join(" ")}
       />
+
       <div
         className={[
           "absolute right-0 top-0 h-full w-[92%] max-w-sm",
@@ -141,7 +137,7 @@ export function Nav() {
             <div className="relative h-12 w-14 shrink-0">
               <Image
                 src="/logo.png"
-                alt="Nathelevate logo"
+                alt="Nathe logo"
                 fill
                 priority
                 sizes="56px"
@@ -150,9 +146,9 @@ export function Nav() {
             </div>
 
             <div className="leading-tight">
-              <div className="text-sm font-bold text-white">Nathelevate</div>
+              <div className="text-sm font-bold text-white">Nathe</div>
               <div className="text-xs text-white/55">
-                Build faster. Ship smarter.
+                AI. Development. Entrepreneurship.
               </div>
             </div>
           </Link>
@@ -170,11 +166,11 @@ export function Nav() {
           <div className="flex-1 overflow-y-auto px-3 py-4">
             <div className="mb-3 rounded-2xl border border-[#FCC822]/20 bg-[#FCC822]/10 p-4">
               <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#FCC822]">
-                Nathelevate
+                Nathe / @nathelevate
               </p>
               <p className="mt-2 text-sm leading-6 text-white/70">
-                AI workflows, products, guides, and real build breakdowns for
-                builders.
+                AI, development, entrepreneurship, online income, and the real
+                journey of building Evo Sports Intelligence.
               </p>
             </div>
 
@@ -197,14 +193,17 @@ export function Nav() {
 
             <div className="my-4 h-px w-full bg-white/10" />
 
-            <button
-              onClick={() => handleAnchorClick("#start")}
+            <a
+              href="https://www.youtube.com/@nathelevate"
+              target="_blank"
+              rel="noreferrer"
+              onClick={requestClose}
               className="nathe-yellow-button mx-1 inline-flex w-[calc(100%-8px)] items-center justify-center rounded-2xl bg-[#FCC822] px-5 py-3 font-black text-[#05070D] transition hover:bg-yellow-300"
             >
-              <Target className="mr-2 h-4 w-4" />
-              Start here
+              <Youtube className="mr-2 h-4 w-4" />
+              Watch YouTube
               <ChevronRight className="ml-2 h-4 w-4" />
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -218,7 +217,7 @@ export function Nav() {
           <div className="relative h-12 w-14 shrink-0">
             <Image
               src="/logo.png"
-              alt="Nathelevate logo"
+              alt="Nathe logo"
               fill
               priority
               sizes="56px"
@@ -228,10 +227,10 @@ export function Nav() {
 
           <div className="hidden leading-tight sm:block">
             <div className="text-sm font-bold tracking-tight text-white transition group-hover:text-[#FCC822]">
-              Nathelevate
+              Nathe
             </div>
             <div className="text-xs text-white/55">
-              Build faster. Ship smarter.
+              AI. Development. Builder.
             </div>
           </div>
         </Link>
@@ -249,11 +248,13 @@ export function Nav() {
           ))}
 
           <a
-            href={toAnchorHref("#start")}
+            href="https://www.youtube.com/@nathelevate"
+            target="_blank"
+            rel="noreferrer"
             className="nathe-yellow-button ml-3 inline-flex items-center rounded-2xl bg-[#FCC822] px-4 py-2 text-sm font-black text-[#05070D] transition hover:bg-yellow-300"
           >
-            Start here
-            <ChevronRight className="ml-2 h-4 w-4" />
+            YouTube
+            <Youtube className="ml-2 h-4 w-4" />
           </a>
         </nav>
 
