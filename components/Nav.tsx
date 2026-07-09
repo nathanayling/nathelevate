@@ -8,11 +8,12 @@ import { usePathname, useRouter } from "next/navigation";
 import {
   Menu,
   X,
-  Bot,
   Youtube,
   ChevronRight,
-  Target,
+  FolderKanban,
   Trophy,
+  Globe2,
+  UserRound,
 } from "lucide-react";
 
 type NavItem = {
@@ -22,9 +23,10 @@ type NavItem = {
 };
 
 const navItems: NavItem[] = [
-  { href: "#pillars", label: "Pillars", icon: Bot },
-  { href: "#projects", label: "Evo Ecosystem", icon: Trophy },
-  { href: "#start", label: "Start Here", icon: Target },
+  { href: "#projects", label: "Projects", icon: FolderKanban },
+  { href: "#evo", label: "Evo", icon: Trophy },
+  { href: "#channels", label: "Channels", icon: Globe2 },
+  { href: "#about", label: "About", icon: UserRound },
 ];
 
 const ANIM_MS = 260;
@@ -133,7 +135,11 @@ export function Nav() {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
-          <Link href="/" onClick={requestClose} className="flex items-center gap-2">
+          <Link
+            href="/"
+            onClick={requestClose}
+            className="flex items-center gap-2"
+          >
             <div className="relative h-12 w-14 shrink-0">
               <Image
                 src="/logo.png"
@@ -148,7 +154,7 @@ export function Nav() {
             <div className="leading-tight">
               <div className="text-sm font-bold text-white">Nathe</div>
               <div className="text-xs text-white/55">
-                AI. Development. Entrepreneurship.
+                Building software.
               </div>
             </div>
           </Link>
@@ -169,8 +175,7 @@ export function Nav() {
                 Nathe / @nathelevate
               </p>
               <p className="mt-2 text-sm leading-6 text-white/70">
-                AI, development, entrepreneurship, online income, and the real
-                journey of building Evo Sports Intelligence.
+                Building software, growing products and sharing the journey.
               </p>
             </div>
 
@@ -198,7 +203,7 @@ export function Nav() {
               target="_blank"
               rel="noreferrer"
               onClick={requestClose}
-              className="nathe-yellow-button mx-1 inline-flex w-[calc(100%-8px)] items-center justify-center rounded-2xl bg-[#FCC822] px-5 py-3 font-black text-[#05070D] transition hover:bg-yellow-300"
+              className="mx-1 inline-flex w-[calc(100%-8px)] items-center justify-center rounded-2xl bg-[#FCC822] px-5 py-3 font-black text-[#05070D] transition hover:bg-yellow-300"
             >
               <Youtube className="mr-2 h-4 w-4" />
               Watch YouTube
@@ -229,9 +234,7 @@ export function Nav() {
             <div className="text-sm font-bold tracking-tight text-white transition group-hover:text-[#FCC822]">
               Nathe
             </div>
-            <div className="text-xs text-white/55">
-              AI. Development. Builder.
-            </div>
+            <div className="text-xs text-white/55">Founder. Builder. Host.</div>
           </div>
         </Link>
 
@@ -251,7 +254,7 @@ export function Nav() {
             href="https://www.youtube.com/@nathelevate"
             target="_blank"
             rel="noreferrer"
-            className="nathe-yellow-button ml-3 inline-flex items-center rounded-2xl bg-[#FCC822] px-4 py-2 text-sm font-black text-[#05070D] transition hover:bg-yellow-300"
+            className="ml-3 inline-flex items-center rounded-2xl bg-[#FCC822] px-4 py-2 text-sm font-black text-[#05070D] transition hover:bg-yellow-300"
           >
             YouTube
             <Youtube className="ml-2 h-4 w-4" />

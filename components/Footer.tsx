@@ -2,16 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   Sparkles,
-  Bot,
-  Rocket,
   Youtube,
   Facebook,
   Instagram,
   ArrowUpRight,
   ShieldCheck,
   Trophy,
-  Zap,
   FolderKanban,
+  Globe2,
+  Bot,
+  Search,
+  PlayCircle,
 } from "lucide-react";
 
 function XIcon(props: React.SVGProps<SVGSVGElement>) {
@@ -44,9 +45,9 @@ export function Footer() {
       <div className="mt-20 border-t border-white/10 bg-[#11141d]">
         <div className="mx-auto max-w-7xl px-6 py-4 text-center sm:px-8 lg:px-10">
           <p className="mx-auto max-w-4xl text-sm leading-6 text-white/55">
-            Nathe / Nathelevate may include affiliate links, partner links, or
-            recommendations in future content. Any support helps fund the builds
-            at no extra cost to you.
+            Nathe / @nathelevate is the founder and builder hub for Nathan
+            Ayling. Content may include affiliate links or partner links in the
+            future.
           </p>
         </div>
       </div>
@@ -72,21 +73,19 @@ export function Footer() {
                   </div>
                   <div className="flex items-center gap-1 text-xs text-white/50">
                     <Sparkles className="h-3 w-3 text-[#FCC822]" />
-                    AI. Development. Builder.
+                    Founder. Builder. Host.
                   </div>
                 </div>
               </Link>
 
               <p className="mt-4 max-w-sm text-sm leading-6 text-white/55">
-                I document the real process of using AI, building software,
-                growing online businesses, testing ideas, and creating income
-                streams — with Evo Sports Intelligence as my main business
-                focus.
+                Building software, growing products and sharing the journey
+                behind Evo Sports Intelligence, Aicrono, SEEK and DOIT.
               </p>
 
               <div className="mt-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-white/55">
                 <ShieldCheck className="h-3.5 w-3.5 text-[#FCC822]" />
-                Real builds. Real lessons. No fake guru stuff.
+                Real builds. Real products. Real progress.
               </div>
 
               <div className="mt-6">
@@ -117,19 +116,19 @@ export function Footer() {
               <h3 className="text-sm font-semibold text-white">Explore</h3>
 
               <div className="mt-4 flex flex-col gap-3 text-sm text-white/55">
-                <Link href="/#start" className="inline-flex items-center gap-2 transition hover:text-white">
-                  <Sparkles className="h-4 w-4 text-[#FCC822]" />
-                  Start Here
-                </Link>
-
-                <Link href="/#pillars" className="inline-flex items-center gap-2 transition hover:text-white">
-                  <FolderKanban className="h-4 w-4 text-[#FCC822]" />
-                  Content Pillars
-                </Link>
-
                 <Link href="/#projects" className="inline-flex items-center gap-2 transition hover:text-white">
+                  <FolderKanban className="h-4 w-4 text-[#FCC822]" />
+                  Projects
+                </Link>
+
+                <Link href="/#evo" className="inline-flex items-center gap-2 transition hover:text-white">
                   <Trophy className="h-4 w-4 text-[#FCC822]" />
                   Evo Ecosystem
+                </Link>
+
+                <Link href="/#channels" className="inline-flex items-center gap-2 transition hover:text-white">
+                  <Globe2 className="h-4 w-4 text-[#FCC822]" />
+                  Media Channels
                 </Link>
 
                 <a
@@ -145,23 +144,28 @@ export function Footer() {
             </div>
 
             <div>
-              <h3 className="text-sm font-semibold text-white">Content pillars</h3>
+              <h3 className="text-sm font-semibold text-white">Products</h3>
 
               <div className="mt-4 flex flex-col gap-3 text-sm text-white/55">
-                <div className="inline-flex items-center gap-2">
+                <a href="https://evosportsintelligence.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 transition hover:text-white">
+                  <Trophy className="h-4 w-4 text-[#FCC822]" />
+                  Evo Sports Intelligence
+                </a>
+
+                <a href="https://aicrono.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 transition hover:text-white">
                   <Bot className="h-4 w-4 text-[#FCC822]" />
-                  AI &amp; Development
-                </div>
+                  Aicrono
+                </a>
 
-                <div className="inline-flex items-center gap-2">
-                  <Rocket className="h-4 w-4 text-[#FCC822]" />
-                  Entrepreneurship
-                </div>
+                <a href="https://theseekshow.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 transition hover:text-white">
+                  <Search className="h-4 w-4 text-[#FCC822]" />
+                  SEEK
+                </a>
 
-                <div className="inline-flex items-center gap-2">
-                  <Zap className="h-4 w-4 text-[#FCC822]" />
-                  Online Income
-                </div>
+                <a href="https://thedoitshow.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 transition hover:text-white">
+                  <PlayCircle className="h-4 w-4 text-[#FCC822]" />
+                  DOIT
+                </a>
               </div>
             </div>
 
@@ -169,9 +173,8 @@ export function Footer() {
               <h3 className="text-sm font-semibold text-white">Legal & info</h3>
 
               <p className="mt-4 text-xs leading-6 text-white/55">
-                Nathelevate is the home of my creator brand. Evo Sports
-                Intelligence is the product ecosystem I’m actively building,
-                with EvoCore as the AI intelligence layer behind it.
+                Nathe is the founder hub. Evo Sports Intelligence and Aicrono
+                are software products. SEEK and DOIT are separate media brands.
               </p>
 
               <div className="mt-4 flex flex-col gap-3 text-sm text-white/55">
@@ -193,7 +196,7 @@ export function Footer() {
                   href="https://www.youtube.com/@nathelevate"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="nathe-yellow-button inline-flex items-center gap-2 rounded-xl bg-[#FCC822] px-4 py-2.5 text-sm font-black text-[#05070D] transition hover:bg-yellow-300"
+                  className="inline-flex items-center gap-2 rounded-xl bg-[#FCC822] px-4 py-2.5 text-sm font-black text-[#05070D] transition hover:bg-yellow-300"
                 >
                   Watch YouTube
                   <ArrowUpRight className="h-4 w-4" />
@@ -205,23 +208,19 @@ export function Footer() {
           <div className="mt-10 border-t border-white/10 pt-5">
             <div className="flex flex-col gap-3 text-xs text-white/40 lg:flex-row lg:items-center lg:justify-between">
               <div className="flex flex-wrap items-center gap-2">
-                <span>© {new Date().getFullYear()} Nathelevate.</span>
-
+                <span>© {new Date().getFullYear()} Nathe.</span>
                 <span className="text-white/25">•</span>
-
-                <span>Built by Nathe.</span>
-
+                <span>Built by Nathan Ayling.</span>
                 <span className="text-white/25">•</span>
-
-                <span>AI. Development. Builder.</span>
+                <span>Software. Products. Media.</span>
               </div>
 
               <div className="flex flex-wrap items-center gap-4">
-                <Link href="/#pillars" className="transition hover:text-white">
-                  Pillars
-                </Link>
                 <Link href="/#projects" className="transition hover:text-white">
-                  Evo Ecosystem
+                  Projects
+                </Link>
+                <Link href="/#channels" className="transition hover:text-white">
+                  Channels
                 </Link>
                 <a
                   href="https://www.youtube.com/@nathelevate"

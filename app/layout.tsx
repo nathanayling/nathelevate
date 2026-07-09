@@ -6,11 +6,10 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 
 const siteUrl = "https://nathelevate.com";
-const siteName = "Nathelevate";
-const defaultTitle =
-  "Nathelevate — AI Workflows, SaaS Builds & Online Income Experiments";
+const siteName = "Nathe";
+const defaultTitle = "Nathe | Software Developer, AI Builder & Founder";
 const defaultDescription =
-  "Nathelevate is where developer Nathan Ayling shares AI-assisted development workflows, SaaS builds, digital products, online income experiments, and real build-in-public lessons.";
+  "Nathe is the founder and builder hub for Nathan Ayling — documenting software builds, AI products, sports intelligence platforms, Aicrono, Evo Sports Intelligence and the process of shipping useful products.";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,48 +25,39 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-
   title: {
     default: defaultTitle,
-    template: "%s · Nathelevate",
+    template: "%s · Nathe",
   },
-
   description: defaultDescription,
-
   applicationName: siteName,
   generator: "Next.js",
   referrer: "origin-when-cross-origin",
-
   keywords: [
+    "Nathe",
     "Nathelevate",
     "Nathan Ayling",
-    "AI development workflows",
-    "AI for developers",
-    "SaaS builder",
+    "software developer",
+    "AI builder",
+    "SaaS founder",
+    "sports intelligence",
+    "Evo Sports Intelligence",
+    "Aicrono",
+    "RaceEvo",
+    "FootyEvo",
+    "OddsEvo",
+    "EvoCore",
+    "AI products",
     "build in public",
-    "digital products",
-    "online income",
-    "developer tools",
-    "Next.js",
-    "AI automation",
-    "side hustle experiments",
-    "software development",
+    "developer founder",
+    "Next.js developer",
   ],
-
-  authors: [
-    {
-      name: "Nathan Ayling",
-      url: "https://nathe.tv",
-    },
-  ],
-
+  authors: [{ name: "Nathan Ayling", url: siteUrl }],
   creator: "Nathan Ayling",
-  publisher: "Nathelevate",
-
+  publisher: "Nathe",
   alternates: {
     canonical: siteUrl,
   },
-
   robots: {
     index: true,
     follow: true,
@@ -79,7 +69,6 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-
   openGraph: {
     type: "website",
     locale: "en_GB",
@@ -92,11 +81,10 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Nathelevate — AI Workflows, SaaS Builds and Online Income Experiments",
+        alt: "Nathe — Software Developer, AI Builder and Founder",
       },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
     site: "@nathelevate",
@@ -105,15 +93,10 @@ export const metadata: Metadata = {
     description: defaultDescription,
     images: ["/og-image.png"],
   },
-
   icons: {
-    icon: [
-      { url: "/favicon.ico" },
-      { url: "/icon.png", type: "image/png" },
-    ],
+    icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png" }],
     apple: [{ url: "/apple-icon.png" }],
   },
-
   category: "technology",
 };
 
@@ -129,28 +112,29 @@ export default function RootLayout({
         url: siteUrl,
         name: siteName,
         description: defaultDescription,
-        publisher: {
-          "@id": `${siteUrl}/#person`,
-        },
+        publisher: { "@id": `${siteUrl}/#person` },
         inLanguage: "en-GB",
       },
       {
         "@type": "Person",
         "@id": `${siteUrl}/#person`,
         name: "Nathan Ayling",
-        alternateName: "Nathe",
+        alternateName: ["Nathe", "Nathelevate"],
         url: siteUrl,
         sameAs: [
-          "https://nathe.tv",
           "https://www.youtube.com/@nathelevate",
           "https://www.facebook.com/nathelevate/",
           "https://www.instagram.com/nathelevate",
           "https://twitter.com/nathelevate",
           "https://www.tiktok.com/@nathelevate",
+          "https://evosportsintelligence.com",
+          "https://aicrono.com",
+          "https://theseekshow.com",
+          "https://thedoitshow.com",
         ],
-        jobTitle: "Full Stack Developer",
+        jobTitle: "Full Stack Developer and Founder",
         description:
-          "Nathan Ayling is a full-stack developer building AI-assisted products, SaaS platforms, digital resources, and online income experiments.",
+          "Nathan Ayling is a full-stack developer and founder building AI-powered software, sports intelligence platforms and media brands.",
       },
       {
         "@type": "Organization",
@@ -187,12 +171,10 @@ export default function RootLayout({
         </Script>
 
         <Script
-          id="nathelevate-jsonld"
+          id="nathe-jsonld"
           type="application/ld+json"
           strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLd),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
         <div className="pointer-events-none fixed inset-0 bg-radial-fade" />
