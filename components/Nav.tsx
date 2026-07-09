@@ -10,8 +10,7 @@ import {
   X,
   Youtube,
   ChevronRight,
-  FolderKanban,
-  Trophy,
+  Package,
   Globe2,
   UserRound,
 } from "lucide-react";
@@ -23,9 +22,8 @@ type NavItem = {
 };
 
 const navItems: NavItem[] = [
-  { href: "#projects", label: "Projects", icon: FolderKanban },
-  { href: "#evo", label: "Evo", icon: Trophy },
-  { href: "#channels", label: "Channels", icon: Globe2 },
+  { href: "#projects", label: "Products", icon: Package },
+  { href: "#channels", label: "Media", icon: Globe2 },
   { href: "#about", label: "About", icon: UserRound },
 ];
 
@@ -40,9 +38,10 @@ export function Nav() {
   const router = useRouter();
   const onHome = pathname === "/";
 
-  const toAnchorHref = useMemo(() => {
-    return (hash: string) => (onHome ? hash : `/${hash}`);
-  }, [onHome]);
+  const toAnchorHref = useMemo(
+    () => (hash: string) => (onHome ? hash : `/${hash}`),
+    [onHome]
+  );
 
   useEffect(() => setMounted(true), []);
 
@@ -154,7 +153,7 @@ export function Nav() {
             <div className="leading-tight">
               <div className="text-sm font-bold text-white">Nathe</div>
               <div className="text-xs text-white/55">
-                Building software.
+                Founder. Builder. Host.
               </div>
             </div>
           </Link>
